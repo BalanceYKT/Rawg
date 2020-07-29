@@ -1,6 +1,5 @@
 package com.example.rawg.ui.main
 
-import androidx.lifecycle.ViewModelProviders
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -14,7 +13,7 @@ class MainFragment : Fragment() {
     fun newInstance() = MainFragment()
   }
 
-  private lateinit var viewModel: MainViewModel
+  private lateinit var viewModel: MainFragmentViewModel
 
   override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                             savedInstanceState: Bundle?): View {

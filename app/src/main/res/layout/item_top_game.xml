@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+
+  <androidx.appcompat.widget.AppCompatImageView
+    android:layout_width="@dimen/game_card_wide_width"
+    android:layout_height="@dimen/game_card_wide_height"
+    android:id="@+id/imageTopGame"
+    />
+
+  <androidx.appcompat.widget.AppCompatTextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/textTopGame"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

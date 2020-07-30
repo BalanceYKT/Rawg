@@ -26,3 +26,5 @@ fun provideLoggingInterceptor(): HttpLoggingInterceptor {
   logger.level = HttpLoggingInterceptor.Level.BASIC
   return logger
 }
+
+fun provideGameApi(retrofit: Retrofit): RawgService = retrofit.create(RawgService::class.java)

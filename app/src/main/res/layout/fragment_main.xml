@@ -19,9 +19,7 @@
 
     <androidx.core.widget.NestedScrollView
       android:layout_width="match_parent"
-      android:layout_height="match_parent"
-      tools:layout_editor_absoluteX="-64dp"
-      tools:layout_editor_absoluteY="60dp">
+      android:layout_height="match_parent">
 
       <LinearLayout
         android:layout_width="match_parent"
@@ -30,15 +28,13 @@
 
         <ImageView
           android:layout_width="wrap_content"
-          android:layout_height="wrap_content" />
+          android:layout_height="wrap_content"
+          android:contentDescription="TODO" />
 
         <androidx.recyclerview.widget.RecyclerView
           android:id="@+id/newGames"
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
-          android:layout_marginStart="16dp"
-          android:layout_marginTop="8dp"
-          android:layout_marginEnd="16dp"
           android:orientation="horizontal"
           app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
           tools:listitem="@layout/item_new_game"
@@ -50,13 +46,17 @@
           android:layout_height="wrap_content"
           android:orientation="horizontal"
           app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+          tools:listitem="@layout/item_top_game"
           />
 
         <androidx.recyclerview.widget.RecyclerView
           android:id="@+id/upcomingGames"
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
-          android:orientation="horizontal" />
+          android:orientation="horizontal"
+          app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+          tools:listitem="@layout/item_upcoming_game"/>
+
 
       </LinearLayout>
 

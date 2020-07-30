@@ -6,13 +6,17 @@
 
   <data>
     <variable
-      name="game"
+      name="newGame"
       type="com.example.rawg.model.GameData" />
   </data>
 
   <androidx.constraintlayout.widget.ConstraintLayout
     android:layout_width="wrap_content"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    android:layout_marginStart="16dp"
+    android:layout_marginTop="8dp"
+    android:layout_marginEnd="16dp"
+    android:layout_marginBottom="8dp">
 
     <androidx.appcompat.widget.AppCompatImageView
       android:id="@+id/imageNewGame"
@@ -31,7 +35,7 @@
       app:layout_constraintStart_toStartOf="parent"
       app:layout_constraintTop_toBottomOf="@+id/imageNewGame"
       tools:textSize="20sp"
-      tools:text="TITLE OF GAME"/>
+      tools:text="TITLE OF NEW GAME"/>
 
   </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

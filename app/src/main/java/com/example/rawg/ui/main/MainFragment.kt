@@ -8,7 +8,7 @@ import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.viewModels
 import com.example.rawg.R
-import com.example.rawg.databinding.FragmentMainBinding
+import com.example.rawg.databinding.ItemGameThinBinding
 
 class MainFragment : Fragment() {
 
@@ -18,14 +18,14 @@ class MainFragment : Fragment() {
 
   private val viewModel: MainFragmentViewModel by viewModels()
 
-  override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
-                            savedInstanceState: Bundle?): View {
+  override fun onCreateView(
+    inflater: LayoutInflater, container: ViewGroup?,
+    savedInstanceState: Bundle?
+  ): View {
 
     val binding: FragmentMainBinding = DataBindingUtil.inflate(inflater, R.layout.fragment_main, container, false)
     binding.viewModel = viewModel
     binding.lifecycleOwner = this
-
-
 
     return binding.root
     //return inflater.inflate(R.layout.fragment_main, container, false)

@@ -1,3 +1,5 @@
 <resources>
   <string name="app_name">Rawg</string>
+  <string name="top_upcoming">Top Upcoming</string>
+  <string name="most_anticipated">Most Anticipated</string>
 </resources>

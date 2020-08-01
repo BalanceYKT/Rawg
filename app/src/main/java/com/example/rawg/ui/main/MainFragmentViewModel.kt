@@ -34,5 +34,4 @@ class MainFragmentViewModel : ViewModel() {
     _gameListData.value = response.getListGame()
   }
 
-
 }

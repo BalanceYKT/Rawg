@@ -4,6 +4,7 @@ import android.os.Parcelable
 import kotlinx.android.parcel.Parcelize
 
 data class GameData(
+  val count: Int,
   val results: List<GameResult>
 ){
 

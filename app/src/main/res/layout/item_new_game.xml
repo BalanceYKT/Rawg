@@ -23,9 +23,12 @@
       android:layout_width="@dimen/game_card_wide_width"
       android:layout_height="@dimen/game_card_wide_height"
       android:layout_margin="8dp"
+      android:scaleType="centerCrop"
       app:layout_constraintEnd_toEndOf="parent"
       app:layout_constraintStart_toStartOf="parent"
-      app:layout_constraintTop_toTopOf="parent"/>
+      app:layout_constraintTop_toTopOf="parent"
+      app:srcCompat="@drawable/DeathStranding"
+      />
 
     <androidx.appcompat.widget.AppCompatTextView
       android:id="@+id/textNewGame"

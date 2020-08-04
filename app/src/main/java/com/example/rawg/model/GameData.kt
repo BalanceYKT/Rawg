@@ -9,19 +9,13 @@ data class GameData(
 ){
 
   fun getListGame(): ArrayList<GameResult> {
-    val GameList = ArrayList<GameResult>()
-    for (i in 0 until 19){
-      results[i].apply{
-        GameList.add(GameResult(i, name, background_image))
-      }
-    }
-    return GameList
+    return ArrayList<GameResult>()
   }
 }
 
 @Parcelize
 data class GameResult(
-  val index: Int,
+  val id: Int,
   val name: String,
   val background_image: String
 ) : Parcelable

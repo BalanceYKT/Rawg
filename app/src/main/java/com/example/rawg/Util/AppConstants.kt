@@ -1,4 +1,4 @@
-package com.example.rawg
+package com.example.rawg.Util
 
 const val BASE_URL: String = "https://api.rawg.io/api/"
 const val DATES: String = "2019-10-10,2020-10-10"

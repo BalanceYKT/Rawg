@@ -1,6 +1,6 @@
 package com.example.rawg.network
 
-import com.example.rawg.BASE_URL
+import com.example.rawg.Util.BASE_URL
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit

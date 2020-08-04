@@ -1,17 +1,18 @@
-package com.example.rawg.ui.main
+package com.example.rawg.ui.adapter
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
-import android.view.ViewParent
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.example.rawg.databinding.ItemGameThinBinding
 import com.example.rawg.model.GameResult
 
-class Adapter : ListAdapter<GameResult, Adapter.Viewholder>(AdapterDiffCallback()) {
+class Adapter : ListAdapter<GameResult, Adapter.Viewholder>(
+  AdapterDiffCallback()
+) {
 
-  override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): Viewholder{
+  override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): Viewholder {
     return Viewholder.from(parent)
   }
 

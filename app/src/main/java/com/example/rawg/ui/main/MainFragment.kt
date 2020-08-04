@@ -10,9 +10,13 @@ import androidx.fragment.app.viewModels
 import androidx.lifecycle.Observer
 import com.example.rawg.R
 import com.example.rawg.databinding.FragmentMainBinding
-import com.example.rawg.databinding.ItemGamesHorizontalBinding
+import com.example.rawg.ui.adapter.Adapter
 
 class MainFragment : Fragment() {
+
+  companion object{
+    fun newInstance() = MainFragment()
+  }
 
   private val viewModel: MainFragmentViewModel by viewModels()
 

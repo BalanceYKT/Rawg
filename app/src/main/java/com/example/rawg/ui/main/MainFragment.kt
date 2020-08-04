@@ -9,6 +9,7 @@ import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.Observer
 import com.example.rawg.R
+import com.example.rawg.databinding.FragmentMainBinding
 import com.example.rawg.databinding.ItemGamesHorizontalBinding
 
 class MainFragment : Fragment() {
@@ -20,7 +21,7 @@ class MainFragment : Fragment() {
     savedInstanceState: Bundle?
   ): View {
 
-    val binding: ItemGamesHorizontalBinding = DataBindingUtil.inflate(inflater, R.layout.fragment_main, container, false)
+    val binding: FragmentMainBinding = DataBindingUtil.inflate(inflater, R.layout.fragment_main, container, false)
 
     binding.viewModel = viewModel
     binding.lifecycleOwner = this
